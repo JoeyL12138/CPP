@@ -117,6 +117,13 @@ for (auto v : vint)
 
 
 - <font color=red>任何可能改变vector对象容量的操作，都会使该vector对象的迭代器失效</font>
+- 可以用数组初始化vector:
+
+```c++
+int arr[5] = {1,2,3,4,5,};
+vector<int> ivec(begin(arr), end(arr));
+vector<int> subVec(arr+1, arr+3);
+```
 
 
 
@@ -150,5 +157,33 @@ int *ptrs[10];					//ptrs是长度为10，类型为整型指针（int*）的数�
 int &refs[10] = /*.....*/;		//错误，不支持引用的数组
 int (*pArray)[10] = &arr;		//pArray是一个指针，指向长度为10，类型为int的数组
 int (&arrRef)[10] = arr;		//arrRef是一个引用，绑定长度为10，类型为int的数组
+```
+
+
+
+- 数组支持range for遍历
+
+
+
+- 标准库String比C风格字符串（即以'\0'结尾的字符串数组）更安全
+- C风格字符串可以代替字符串字面值，对String进行初始化，赋值等操作
+- String通过成员函数c_str()返回C风格字符串
+- <font color=red>c_str()返回的结果可能会因为String的改变而失效，使用时最好复制 一份</font>
+
+
+
+#### 多维数组
+
+- <font color=red>**使用range for遍历多维数组，除最内层循环外，其他所有循环的控制变量都应该是引用类型**</font>
+
+```c++
+
+```
+
+
+
+```
+//auto
+
 ```
 
