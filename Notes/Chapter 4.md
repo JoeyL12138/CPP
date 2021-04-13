@@ -50,3 +50,21 @@ while (iter != v.end())
 
 - 移位运算符满足左结合律
 
+
+
+#### 逗号运算符
+
+- 返回的结果为右侧表达式的值
+
+
+
+#### 显式类型转换
+
+- 格式： cast-name<type> (expression);
+
+  cast-name：static_cast，const_cast，
+
+
+
+- <font color=red>**尽量避免使用强制类型转换**</font>
+
