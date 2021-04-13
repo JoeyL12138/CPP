@@ -183,14 +183,7 @@ int *last = end(ia)
 
 - <font color=red>**使用range for遍历多维数组，除最内层循环外，其他所有循环的控制变量都应该是引用类型**</font>
 
-```c++
-
-```
 
 
 
-```
-//auto
-
-```
 
