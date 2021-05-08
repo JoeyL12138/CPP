@@ -65,6 +65,12 @@ constexpr int *p = &i;
 
 
 
+#### 为什么C++中常量引用可以绑定非常量的对象、字面值和一般表达式
+
+[https://blog.csdn.net/Colsum/article/details/79095462](https://blog.csdn.net/Colsum/article/details/79095462)
+
+
+
 #### 处理类型
 
 ##### 1.类型别名
